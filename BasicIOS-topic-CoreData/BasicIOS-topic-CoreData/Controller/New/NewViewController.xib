@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewViewController" customModule="BasicIOS_topic_CoreData" customModuleProvider="target">
+            <connections>
+                <outlet property="ageTextField" destination="fFf-AI-oBS" id="j8N-xb-fbb"/>
+                <outlet property="genderSegmetedControl" destination="BdO-TN-BXu" id="YIv-y7-sCJ"/>
+                <outlet property="nameTextField" destination="3l6-ez-Sot" id="zQw-6e-hIV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BdO-TN-BXu">
+                    <rect key="frame" x="143.5" y="432.5" width="127" height="32"/>
+                    <segments>
+                        <segment title="Male"/>
+                        <segment title="Female"/>
+                    </segments>
+                </segmentedControl>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3l6-ez-Sot">
+                    <rect key="frame" x="158.5" y="304.5" width="97" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="cS4-mk-3Wn"/>
+                        <constraint firstAttribute="width" constant="97" id="eVa-kA-Hq6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fFf-AI-oBS">
+                    <rect key="frame" x="158.5" y="368.5" width="97" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="97" id="3eH-sU-tHH"/>
+                        <constraint firstAttribute="height" constant="34" id="e0J-7B-09H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="BdO-TN-BXu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="BMY-Oc-xxV"/>
+                <constraint firstItem="fFf-AI-oBS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JNy-FQ-Qaw"/>
+                <constraint firstItem="fFf-AI-oBS" firstAttribute="top" secondItem="3l6-ez-Sot" secondAttribute="bottom" constant="30" id="MWG-XJ-ftt"/>
+                <constraint firstItem="BdO-TN-BXu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NK1-7s-5OF"/>
+                <constraint firstItem="3l6-ez-Sot" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SNL-be-dHz"/>
+                <constraint firstItem="BdO-TN-BXu" firstAttribute="top" secondItem="fFf-AI-oBS" secondAttribute="bottom" constant="30" id="WvO-0v-o4V"/>
+            </constraints>
+            <point key="canvasLocation" x="34.782608695652179" y="98.4375"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
